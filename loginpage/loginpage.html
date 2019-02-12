@@ -21,7 +21,7 @@
 
                 <form>
                     <input type="search" class="searchbar" placeholder="Search here" >
-                    <button type="submit" class="searchbutton"><i class="fa fa-search"></i></button>
+                    <button type="submit" class="searchbutton">go</i></button>
                 </form>
                 </div>
             
@@ -34,10 +34,10 @@
 
         
       
-        <div class="container">
-            <h1>Online Registration </h1>
+        <div class="page_heading">
+            <h1 class="page_headers1">Online Registration </h1>
             <hr>
-            <p>FILL THIS FORM WITH YOUR CORRECT CREDENTIALS!</p>
+            <p class="page_headers2">FILL THIS FORM WITH YOUR CORRECT CREDENTIALS!</p>
         </div>
 
        <!-- webpage form starts here -->
@@ -45,31 +45,43 @@
        <fieldset class="form_area">
             <div >
                  <form>
-                      
-                    <h5 class="box_title">Title </h5>
+                        <label class="box_title">Title </label>
                       <select class="titlebox">
                           <option value="mr">Mr.</option>
                           <option value="mr">Mrs.</option>
                         </select>
                       <br>
                       
-                    <h5 class="box_title">  First name </h5> <input class="textboxes" ><br>         
-                    <h5 class="box_title">  Last name </h5> <input class="textboxes" ><br>
+                    <label class="box_title">  First name  </label> <input class="textboxes" ><br>         
+                    <label class="box_title">  Last name  </label> <input class="textboxes" ><br>
                       
-                    <h5 class="box_title">  D.O.B </h5> <input type="date" class="textboxes" Data-Date-inline-picker="true"><br>
+                    <label class="box_title">  D.O.B </label> <input type="date" class="textboxes" Data-Date-inline-picker="true"><br>
                       
-                      <h5 class="box_title">  Full Address </h5> <input class="textboxes"><br>
+                    <label class="box_title"> Full Address </label> <input class="textboxes"><br>
                       
-                    <h5 class="box_title">  Items List </h5> <input class="textboxes"><br>
-                      <div>
-                    <h5 class="box_title"> Choose any  </h5>
-                        <div class="checkbox">
+                    <label class="box_title">  Items List </label> 
+                    
+                    <textarea class="textboxes" rows="3" cols="30"> 
+                        item One 
+                        item two 
+                        item three
+                    </textarea><br>
+                    
+                    <div>
+                    <div class="radio_button">
+                    <div class="box_title">
+                    <label> Choose any  </label>
+                    </div>
+                    <div class="checkboxes">
+                            
                                  <input  type="radio" name="choose_any_checkbox0" value="choice 1"> choice 1 <br>
                                  <input  type="radio" name="choose_any_checkbox0" value="choice 1"> choice 2 <br>
                                  <input  type="radio" name="choose_any_checkbox0" value="choice 1"> choice 3 <br>
+                            
                         </div>
+                    </div>
                       </div>
-                     <h5 class="box_title"> Incement Number </h5> <input type="number" class="textboxes" min="0" max="100"><br>
+                    <label class="box_title"> Incement Number </label> <input type="number" class="textboxes" min="0" max="100"><br>
                       
                       <!-- checkbox , Save data and register  down below -->
 
@@ -97,12 +109,21 @@
         
 
     }
-    .container{
+    .page_heading{
         padding-top: 120px;
         width: 100%;
         margin-top: 29px;
         
 
+    }
+
+    .page_headers1{
+        padding-left: 530px;
+
+    }
+
+    .page_headers2{
+        padding-left: 460px;
     }
 
     .website_logo{
@@ -130,17 +151,18 @@
 
     .search_bar{
         margin: 0;
-        float:right;       
+        float:right;
     }
 
     .searchbar_box{
         width:  200px;
         height: 30px;
+
     }
 
     .searchbutton{
          
-        width:25px;
+        width:30px;
         height: 25px;
     }
 
@@ -163,8 +185,7 @@
     }
 
     .box_title{
-     margin-top:10px;
-
+     margin-top:20px;
     }
 
     .textboxes{
@@ -179,7 +200,7 @@
         float: right;
     }
 
-    .checkbox{
+    .checkboxes{
         margin-top: 10px;
         float: right;
     }
