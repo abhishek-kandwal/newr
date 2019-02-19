@@ -1,13 +1,15 @@
 // here is the variables.
+
 var strar1=[10];
 var strar2=[10];
-var str1='hello';
-var str2="olleh";
+var str1='dacbe';
+var str2="dcabe";
 var checker1='';
 var checker2='';
 
 // here the main code begins
 // for loop for converting the string in array
+
 for(var i = 0; i < str1.length; i++)
 {   
     strar1[i]=str1[i];
@@ -21,7 +23,7 @@ for(var j = 0; j < str2.length; j++){
 
 for(var k=1;k<strar1.length;k++)
 {
-    for(l=0;l<strar1.length-l;l++)
+    for( var l=0;l<strar1.length;l++)
     {
         if(strar1[l]>strar1[l+1])
         {
@@ -33,15 +35,17 @@ for(var k=1;k<strar1.length;k++)
 }
 
 // converting the array-1 into string-1
+
 for(var l=0;l<strar1.length;l++)
 {
     checker1 += strar1[l]; 
 }
 
 // sorting the next array-2 here 
+
 for(var k=1;k<strar2.length;k++)
 {
-    for(l=0;l<strar2.length-l;l++)
+    for( var l=0;l<strar2.length;l++)
     {
         if(strar2[l]>strar2[l+1])
         {
@@ -53,20 +57,22 @@ for(var k=1;k<strar2.length;k++)
     
 }
      
+
 // converting the array-2 into string-2
+
 for(var l=0;l<strar2.length;l++)
 {
     checker2 += strar2[l]; 
 }
-
-// here printing the strings-1 & 2.
+    
 console.log(checker1);
 console.log(checker2);
 
 // checking is a anagram or not
+
 if(checker1===checker2)
 {
-    console.log("is a Anagram");
+    console.log(" is Anagram");
 }
 
 else
