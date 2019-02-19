@@ -19,7 +19,7 @@ for(var j = 0; j < str2.length; j++){
 
 // sorting the array-1 here. 
 
-for(var k=1;k<strarray1.length;k++)
+for(var k=1;k<strar1.length;k++)
 {
     for(l=0;l<strar1.length-l;l++)
     {
