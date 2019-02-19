@@ -1,63 +1,72 @@
-var strarray1=[100];
-var strarray2=[100];
-var str1='dacbe';
-var str2="dcabe";
-var check1='';
-var check2='';
+// here is the variables.
+var strar1=[10];
+var strar2=[10];
+var str1='hello';
+var str2="olleh";
+var checker1='';
+var checker2='';
 
+// here the main code begins
+// for loop for converting the string in array
 for(var i = 0; i < str1.length; i++)
 {   
-    strarray1[i]=str1[i];
+    strar1[i]=str1[i];
 }
 
 for(var j = 0; j < str2.length; j++){   
-    strarray2[j]=str2[j];
+    strar2[j]=str2[j];
 }
+
+// sorting the array-1 here. 
 
 for(var k=1;k<strarray1.length;k++)
 {
-    for(l=0;l<strarray1.length-l;l++)
+    for(l=0;l<strar1.length-l;l++)
     {
-        if(strarray1[l]>strarray1[l+1])
+        if(strar1[l]>strar1[l+1])
         {
-            var temp=strarray1[l];
-            strarray1[l]=strarray1[l+1];
-            strarray1[l+1] = temp;
+            var temp=strar1[l];
+            strar1[l]=strar1[l+1];
+            strar1[l+1] = temp;
         }
     }
 }
 
-for(var l=0;l<strarray1.length;l++)
+// converting the array-1 into string-1
+for(var l=0;l<strar1.length;l++)
 {
-    check1 += strarray1[l]; 
+    check1 += strar1[l]; 
 }
 
-for(var k=1;k<strarray2.length;k++)
+// sorting the next array-2 here 
+for(var k=1;k<strar2.length;k++)
 {
-    for(l=0;l<strarray2.length-l;l++)
+    for(l=0;l<strar2.length-l;l++)
     {
-        if(strarray2[l]>strarray2[l+1])
+        if(strar2[l]>strar2[l+1])
         {
-            var temp=strarray2[l];
-            strarray2[l]=strarray2[l+1];
-            strarray2[l+1] = temp;
+            var temp=strar2[l];
+            strar2[l]=strar2[l+1];
+            strar2[l+1] = temp;
         }
     }
     
 }
      
-
-for(var l=0;l<strarray2.length;l++)
+// converting the array-2 into string-2
+for(var l=0;l<strar2.length;l++)
 {
-    check2 += strarray2[l]; 
+    checker2 += strar2[l]; 
 }
-    
-console.log(check1);
-console.log(check2);
 
-if(check1===check2)
+// here printing the strings-1 & 2.
+console.log(checker1);
+console.log(checker2);
+
+// checking is a anagram or not
+if(checker1===checker2)
 {
-    console.log("isAnagram");
+    console.log("is a Anagram");
 }
 
 else
