@@ -35,7 +35,7 @@ for(var k=1;k<strar1.length;k++)
 // converting the array-1 into string-1
 for(var l=0;l<strar1.length;l++)
 {
-    check1 += strar1[l]; 
+    checker1 += strar1[l]; 
 }
 
 // sorting the next array-2 here 
