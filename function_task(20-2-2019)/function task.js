@@ -1,3 +1,4 @@
+// this is the array where the data_type is stored .
 var data = [
     {
         "type": 'A',
@@ -21,6 +22,7 @@ var data = [
     }
 ]
 
+// this is the function for calculate all the data
 function calculate (input=E,amount=100){
     for(var i = 0; i<data.length; i++){
         if(data[i].type == input){
@@ -30,10 +32,10 @@ function calculate (input=E,amount=100){
             net_percentage = ((amount / 100 ) * data[i].percentage);
             deduct = amount - data[i].percentage;
 
-            console.log( 'type :' + data[i].type + '\n' + 'amount :' + amount + '\n' + 'percentage :' + data[i].percentage + '\n' + 'deducted :' + deduct + '\n' + 'percentage :' + net_percentage);
+            console.log( 'type :' + data[i].type + '\n' + 'amount :' + amount + '\n' + 'percentage :' + data[i].percentage + '\n' + 'net_amount after deduction :' + deduct + '\n' + 'percentage :' + net_percentage);
         }
     }
 }
-
-var result = calculate('A',98);
+// this is for function call  
+calculate('A',98);
 
