@@ -40,7 +40,7 @@ var inputbar = () => {
 
 // this function to add the entry in the array
 var add_row = () => {
-    flag = 'false'
+    flag = 'false';
     // getting value here
     let usrdate = document.getElementById('usr_date').value;
     let usrdes = document.getElementById('usr_des').value;
@@ -105,7 +105,7 @@ var createtable = () => {
         var btn_val = document.createTextNode('delete');
         btn_del.append(btn_val);
         btn_del.setAttribute('id', i);
-        btn_del.setAttribute('onclick', 'deleted()');
+        btn_del.setAttribute('onclick', 'deleted(' + i +')');
 
  // button ends here
 
@@ -133,8 +133,7 @@ var createtable = () => {
 } 
 
 // this function will delete the row
-var deleted = ()=>{
-    for(var i = 0 ; i<array_of_obj.length;i++){
-        
-    }
+var deleted = (index)=>{
+    array_of_obj.splice(index,1);
+    createtable();
 }
