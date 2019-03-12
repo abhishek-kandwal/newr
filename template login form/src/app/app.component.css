@@ -1,0 +1,11 @@
+.form_area{
+    margin-top: 5px;
+}
+
+.tag_div{
+    width: 100%;
+}
+
+input.ng-invalid.ng-touched{
+    border: 1px solid red;
+}

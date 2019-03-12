@@ -1,0 +1,36 @@
+<div class="container-fluid">
+<form class="row form_area" (ngSubmit)="onSubmit(f)" #f=ngForm>
+  <div class="col-sm-12 ">
+    <label>username</label> &nbsp;
+    <input ngModel required class="tag_div" type="text" name="username" #username="ngModel">
+    <span class="help-block" *ngIf="!username.valid && username.touched">please enter a valid name</span>
+  </div>
+
+  <div class="col-sm-12">
+    <label>email</label> &nbsp;
+    <input ngModel email  required class="tag_div" type="email" name="email" #email="ngModel">
+    <span class="help-block" *ngIf="!email.valid && email.touched">please enter a valid email</span>
+  </div>
+  <div class="col-sm-12">
+    <label>employee id</label> &nbsp;
+    <input ngModel required class="tag_div" type="text" name="emp" #emp="ngModel">
+    <span class="help-block" *ngIf="!emp.valid && emp.touched">please enter the employee id</span>
+  </div>
+  <div class="col-sm-12">
+      <label>phone no</label> &nbsp;
+      <input ngModel required class="tag_div" type="tel"  pattern = "^[6-9]\d{9}$" minlength="10" maxlength="10" name="pno" #pno="ngModel">
+      <span class="help-block" *ngIf="!pno.valid &&pno.touched">please enter a valid phone number</span>
+    </div>
+  <div class="col-sm-12">
+    <label>address</label> &nbsp;
+    <input ngModel required class="tag_div" type="text" name="address" #address="ngModel">
+    <span class="help-block" *ngIf="!address.valid && address.touched">please enter the address</span>
+    <label>pincode</label> &nbsp;
+    <input ngModel required class="tag_div" type="text" name="pincode" #pincode="ngModel" >
+    <span class="help-block" *ngIf="!pincode.valid &&pincode.touched">please enter the pincode</span>
+  </div>
+  <div class="col-sm-12">
+<button  class="btn btn-primary tag_div form_area" type="submit" [disabled]="!f.valid">submit</button>
+  </div>
+</form>
+</div>
